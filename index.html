@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(136, 145, 212, 0.837);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            width: 100%;
+            height: 7vh;
+            background:linear-gradient( rgba(72, 79, 131, 0.837), rgba(136, 145, 212, 0.837));
+            background-color:#21d5fdba;
+            position: absolute;
+           border-bottom: none;
+        }
+        nav>ul{
+            list-style-type: none;
+            display: flex;
+            align-items: end;
+            padding: 10px 10px;
+            gap: 20px;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            display: inline;
+            font-size: 1.5rem;
+            color: white;
+        }
+        nav>ul>li>a:hover{
+            text-decoration: underline;
+        }
+        .box{
+            width: 20%;
+            height: 60%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s linear 0s;
+            box-shadow: 1px 1px 20px ;
+        }
+        .box:hover{
+            transform: scale(1.03);
+        }
+        .image{
+            width: 90%;
+            height: 60%;
+            background-color: rgba(0, 119, 255, 0.637);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 70%;
+            height: 70%;
+        
+        }
+        #remain{
+            margin-left: 10px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #remain h3{
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav> 
+        <ul>
+            <li><a href="/CardMaster/card2.html">Card 2</a></li>
+            <li><a href="/CardMaster/card3.html">Card 3</a></li>
+        </ul>
+     <div class="container">
+        <div class="box">
+            <div class="image">
+                <img src="qrcode.png" alt="">
+            </div>
+            <div id="remain">
+                <h3>Improve Your frontend skills by building projects.</h3>
+                <p>Scan the QR Code to visit Front End mentor and take your coding skills to next level.</p>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
